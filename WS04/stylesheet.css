@@ -1,0 +1,84 @@
+p {font-family: serif; color: crimson; font-size: 20px;}
+
+.transition-button {
+    background-color: crimson;
+    color: lightpink;
+    width: 20%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background color 1s ease;
+}
+
+.transition-button:hover {
+    background-color: lightpink;
+    color: crimson;
+}
+
+.animation-box {
+    width: 40px;
+    height: 40px;
+    background-color: crimson;
+    position: relative;
+    animation: move 10s infinite alternate;
+}
+
+@keyframes move {
+    from { 
+            left: 0;
+        }
+    to {
+        left: 100%;
+    }
+}
+.pseudo-list li:nth-child(odd) {
+    color: crimson
+}
+.pseudo-list li:nth-child(even) {
+    color: lightpink
+}
+.img1 {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+.img1:hover {
+    filter: grayscale(0%);
+}
+
+.quote {
+    color: crimson;
+    position: relative;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.quote::after {
+    content: '*';
+    font-size: 40px;
+    position: relative;
+    left: 0;
+    right: 0;
+    color: skyblue;
+
+}
+
+.box-container {
+    border: 3px solid crimson;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.box {
+    background-color: lightpink;
+    color: crimson;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
