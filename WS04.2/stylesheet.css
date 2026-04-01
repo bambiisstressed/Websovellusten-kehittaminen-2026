@@ -1,0 +1,52 @@
+h1 {
+                color: lightpink;
+                text-align: center;
+            }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }        
+    .grid-item {
+        background-color: lightpink;
+        color: crimson;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .box-container {
+    border: 3px solid crimson;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    .box {
+    background-color: lightpink;
+    color: crimson;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+    .responsive-box {
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    @media (max-width: 600px) {
+        .responsive-box {
+            background-color: crimson;
+            color: lightpink;
+        }
+    }
+    @media (min-width: 601px) {
+        .responsive-box {
+            background-color: lightpink;
+            color: crimson;
+        }
+    }
